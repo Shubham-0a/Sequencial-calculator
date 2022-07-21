@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator | Shubham</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <link rel="stylesheet" type="text/css" href="preload.css">
+</head>
+
+<body id="bodybox">
+    <div id="preloader">
+        <div class="preloadmedia">
+            <video id="preloaditem" src="materialpreload.mp4" loop autoplay muted></video>
+        </div>
+    </div>
+
+
+    <section>
+        <div id="pagetitle">
+            Calculator
+        </div>
+
+        <div>
+            Calculating sum of two number
+        </div>
+        <div class="uservalue">
+            <input type="text" id="uservalue1" placeholder="enter the first number">
+            <input type="text" id="uservalue2" placeholder="enter the second number">
+        </div>
+        <div id="displaycontent">
+
+        </div>
+        <div>
+            <button type="button" onclick="sum();">CALCULATE</button>
+        </div>
+
+        <br>
+        <div style="color: red;">
+            NOTE:This calculator calculates value in sequential manner
+        </div>
+
+        <div id="calculator-container">
+            <div id="container-box">
+                <div id="displyscreen">
+                    <div id="problem-display">
+                        0
+                    </div>
+
+                    <div id="result-display">
+
+                    </div>
+                    <br>
+                </div>
+                <div id="input-button">
+                    <button class="num-btm" type="button" onclick="reset();">AC</button>
+                    <button class="num-btm" type="button" onclick="input1();">shift</button>
+                    <button class="num-btm" type="button" onclick="backspace();">del</button>
+                    <button class="num-btm" type="button" onclick="inputnum('1');">1</button>
+                    <button class="num-btm" type="button" onclick="inputnum('2');">2</button>
+                    <button class="num-btm" type="button" onclick="inputnum('3');">3</button>
+                    <button class="num-btm" type="button" onclick="inputnum('4');">4</button>
+                    <button class="num-btm" type="button" onclick="inputnum('5');">5</button>
+                    <button class="num-btm" type="button" onclick="inputnum('6');">6</button>
+                    <button class="num-btm" type="button" onclick="inputnum('7');">7</button>
+                    <button class="num-btm" type="button" onclick="inputnum('8');">8</button>
+                    <button class="num-btm" type="button" onclick="inputnum('9');">9</button>
+                    <button class="num-btm" type="button" onclick="inputnum('0');">0</button>
+                    <button class="num-btm" type="button" onclick="inputsign('+');">+</button>
+                    <button class="num-btm" type="button" onclick="inputsign('-');">-</button>
+                    <button class="num-btm" type="button" onclick="inputsign('/');">/</button>
+                    <button class="num-btm" type="button" onclick="inputsign('*');">*</button>
+                    <button class="num-btm" type="button" onclick="compute();">=</button>
+                    <button class="num-btm" type="button" onclick="computeroot();">sqrt</button>
+                </div>
+            </div>
+        </div>
+        <div id="advertisement">
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/3KthWPoaIqQ" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+                
+    </section>
+    
+    <script src="index.js"></script>
+</body>
+<script>
+    var loader = document.getElementById("preloader");
+    window.addEventListener("load", function () {
+        loader.style.display = "none";
+    })
+</script>
+
+</html>

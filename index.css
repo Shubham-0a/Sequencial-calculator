@@ -1,0 +1,57 @@
+#bodybox{
+    margin: 0;
+    background-color: rgb(100, 250, 14);
+}
+section{
+    padding: 20px;
+}
+#pagetitle{
+    display: block;
+    color: blue;
+    text-align: center;
+    font-size: xx-large;
+    margin: 10px;
+}
+
+            /* calculator */
+#calculator-container{
+    display: flex;
+    width: 280px;
+    background-color: rgba(15, 14, 14, 0.459);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px;
+}
+#container-box{
+    background-color: whitesmoke;
+    margin: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    display: block;
+}
+#displyscreen{
+    margin: 5px;
+    background-color: white;
+    margin-bottom: 15px;
+    padding: 5px;
+}
+#problem-display{
+    display: inline;
+    padding: 5px;
+}
+#result-display{
+    padding: 5px;
+}
+#input-button{
+    display: table;
+}
+.num-btm{
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 5px;
+    color: black;
+    border-color: blue;
+}
+.num-btm:active{
+    background-color: blue;
+}
